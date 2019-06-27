@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 0 0 6rem;
+}
+
+header {
+    background-color: orange;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+section {
+    float: left;
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    background-color: green;
+    width: 30%;
+    height: 100vh;
+    float: right;
+
+
+}
+
+#videoplayer {
+    background-color: red;
+    height: 25rem;
+    width: 50rem;
+}
