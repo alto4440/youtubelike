@@ -13,49 +13,167 @@
 
 <body>
     <header>
-        <button id="menu"><i class="fa fa-bars"></i></button>
-        <img src="" alt="" class="logo" id="header-logo">
-        <input type="text" id="searchbar">
-        <i class="SEARCH BUTTON"></i>
         <nav>
-            <ul id="navbar">
-                <li><i class="fa fa-camera"></i></li>
-                <li><i class="fa fa-th"></i></li>
-                <li><i class="fa fa-comment"></i></li>
-                <li><i class="fa fa-bell"></i></li>
-                <li><i class="fa fa-user-circle"></i></li>
+            <ul>
+                <div id="left">
+                    <li>
+                        <a href="#"><i class="fa fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/logo.png" alt="Youtube logo" class="logo"></a>
+                    </li>
+                </div>
+                <li id="center">
+                    <form>
+                        <input type="text" placeholder="Search">
+                        <input type="button" value="Search">
+                    </form>
+                </li>
+                <div id="right">
+                    <li>
+                        <a href="#" id="upload"><i class="fa fa-upload"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/userpic1.jpg" alt="User profile picture" id="user-pic"></a>
+                    </li>
+
+                </div>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <section id="videoplayer">
-                <div id="current-video">Video Here</div>
-            </section>
-            <section id="video=info">
-                <h1>Video Title</h1>
-                <p class="views">Views</p>
-                <i class="fa fa-user"></i>
-                <h4 class="user-name">Scott Alton</h4>
-                <button class="sub-button">Subscribe</button>
+    <!-- Video Player -->
+    <div id="primary">
 
-            </section>
-            <section id="comments">
+        <section id="videoplayer">
+            <div id="current-video">
+                <iframe width="100%" height="360" src="https://www.youtube.com/embed/qXPhVYpQLPA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
 
-            </section>
-    </main>
+        <section id="video-info">
+            <!-- Video Info Primary  -->
+            <div id="video-info-primary">
+                <h2>How to Make Soft, Buttery French Omelette, Chef John</h2>
+                <p>147,042 Views</p>
+            </div>
+            <!-- Video Info Secondary -->
+            <div id="video-info-secondary">
+                <div class="video-creator-info">
+                    <img src="img/chefjohn.jpg" id="creator-icon" alt="Chef John">
+                    <p class="upload-specs">Food Wishes<p>
+                            <button class="sub-button">Subscribe 2.9M</button>
+                </div>
+                <div class="video-description">
+                    <p>earn how to make Ping Gai Chicken! This is the first Laotian recipe we’ve posted on the channel,
+                        but based on the results of this incredibly delicious, grilled chicken, it won’t be the last!
+                        Visit https://foodwishes.blogspot.com/2019/... for the ingredients, more information, and many,
+                        many more video recipes. I really hope you enjoy this amazing Ping Gai Grilled Chicken recipe!
+
+                        You can also find my content on Allrecipes: http://allrecipes.com/recipes/16791/e...
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Comments Section -->
+        <section id="comments">
+            <div class="comments-sorter">
+                <span>980 Comments</span>
+                <span>SORT BY</span>
+            </div>
+            <div class="comments">
+                <div class="viewer-comment">
+                    <h4>Dustin Longbottom <span class="when">3 weeks ago</span></h4>
+                    <p class="comment"> I like this video, but it was too short! Lookin forward to the next one!
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </div>
 
-    <aside>
-        <h3>Up Next</h3>
 
-        <div class="next-video">
-            <img src="" alt="">
-            <h3>Next Title</h3>
-            <p>Joshua Fluke</p>
-            <p>Recommended for You</p>
+
+    <div id="secondary">
+        <br>
+        <h3>Up Next</h3>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/5UKssrLusBo/mqdefault_6s.webp?du=3000&sqp=COyt7egF&rs=AOn4CLD1cPeRJYI-eqBrbwsrRO7xq0H8jA"
+                class="photo">
+            <div class="info">
+                <h4>Nashville Hot Chicken</h4>
+                <span class="creator-name">Food Wishes</span>
+                <p class="view-count">1.1M views</p>
+            </div>
         </div>
-    </aside>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/H1x5nkVfjuU/mqdefault_6s.webp?du=3000&sqp=CLD07egF&rs=AOn4CLC3shPoRh7rIBwxZNy0yfVgBD68JQ"
+                class="photo">
+            <div class="info">
+                <h4>Ping Gai Chicken</h4>
+                <span class="creator-name">Food Wishes</span>
+                <p class="view-count">146K views</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/D4hfgyELalI/mqdefault_6s.webp?du=3000&sqp=CMDB7egF&rs=AOn4CLD59A3Z0IDuLaEXbk1T-i7sY_nI5w"
+                class="photo">
+            <div class="info">
+                <h4>Firecracker Shrimp - Food Wishes</h4>
+                <span class="creator-name">Food Wishes</span>
+                <p class="view-count">1.1M views</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/SuS1gmsF6rI/mqdefault_6s.webp?du=3000&sqp=CPTg7egF&rs=AOn4CLD7xxNjI7oHWrCujPDQlhB6lFHCcA"
+                class="photo">
+            <div class="info">
+                <h4>My Life As a Jr. Developer</h4>
+                <span class="creator-name">Joshua Fluke</span>
+                <p class="view-count">328k views</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/97vVdQocLR0/mqdefault_6s.webp?du=3000&sqp=CIT37egF&rs=AOn4CLCmLZGn3Y8E3QRhTpZCPqeCuK04IA"
+                class="photo">
+            <div class="info">
+                <h4>Interview Q & A</h4>
+                <span class="creator-name">Joshua Fluke</span>
+                <p class="view-count">81k views</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/H1x5nkVfjuU/mqdefault_6s.webp?du=3000&sqp=CLD07egF&rs=AOn4CLC3shPoRh7rIBwxZNy0yfVgBD68JQ"
+                class="photo">
+            <div class="info">
+                <h4>Ping Gai Chicken</h4>
+                <span class="creator-name">Food Wishes</span>
+                <p class="view-count">146K views</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/D4hfgyELalI/mqdefault_6s.webp?du=3000&sqp=CMDB7egF&rs=AOn4CLD59A3Z0IDuLaEXbk1T-i7sY_nI5w"
+                class="photo">
+            <div class="info">
+                <h4>Firecracker Shrimp - Food Wishes</h4>
+                <span class="creator-name">Food Wishes</span>
+                <p class="view-count">1.1M views</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://i.ytimg.com/an_webp/5UKssrLusBo/mqdefault_6s.webp?du=3000&sqp=COyt7egF&rs=AOn4CLD1cPeRJYI-eqBrbwsrRO7xq0H8jA"
+                class="photo">
+            <div class="info">
+                <h4>Nashville Hot Chicken</h4>
+                <span class="creator-name">Food Wishes</span>
+                <p class="view-count">1.1M views</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 

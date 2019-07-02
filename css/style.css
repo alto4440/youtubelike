@@ -1,40 +1,168 @@
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
 }
 
-.container {
-    padding: 0 0 0 6rem;
+ol,
+ul {
+  list-style: none;
 }
 
-header {
-    background-color: orange;
+/* Elements */
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+/* Navbar */
+nav {
+  height: 50px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+nav ul {
+  padding: 0 35px;
 }
 
 nav ul li {
-    display: inline-block;
+  float: left;
+  position: relative;
 }
 
-section {
-    float: left;
+nav ul li a {
+  color: #777;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
 }
 
-main {
-    width: 70%;
+nav .logo {
+  height: 40px;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
-aside {
-    background-color: green;
-    width: 30%;
-    height: 100vh;
-    float: right;
-
-
+nav form {
+  line-height: 50px;
+  margin-left: 90px;
 }
 
-#videoplayer {
-    background-color: red;
-    height: 25rem;
-    width: 50rem;
+nav input[type="text"] {
+  padding: 5px;
+  width: 30rem;
+}
+
+nav input[type="button"] {
+  width: 60px;
+  height: 31px;
+}
+
+nav #right {
+  float: right;
+}
+
+nav #upload {
+  margin-right: 40px;
+}
+
+nav #user-pic {
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 50%;
+  margin-left: 25px;
+}
+
+#primary {
+  width: 65%;
+  display: inline-block;
+  padding: 2em 1em 0 8em;
+}
+
+#video-info {
+  padding: 20px 0 8px 0;
+  line-height: 1.6;
+  font-weight: 0.7;
+}
+
+#video-info-primary p {
+  font-size: 14px;
+  display: inline-flex;
+}
+
+#video-info-secondary #creator-icon {
+  border-radius: 50%;
+  padding: 0 1em 0 0;
+}
+
+.video-creator-info {
+  display: inline-flex;
+}
+
+.upload-specs {
+  padding-top: 1em;
+  float: right;
+}
+
+.sub-button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 0.7em;
+  margin: 1em;
+  justify-content: end;
+  border-radius: 5px;
+}
+
+/* Secondary Section Sidebar */
+#secondary {
+  background-color: #fff;
+  width: 35%;
+  height: 100%;
+  position: top;
+  float: right;
+  margin: 2em 0 0 0;
+}
+
+.video-card {
+  display: block;
+  width: 275px;
+  max-height: 75px;
+  margin: 0.5em;
+}
+
+.video-card .photo {
+  width: 125px;
+  height: 75px;
+  display: inline-block;
+  position: relative;
+}
+
+.video-card .info {
+  display: inline-block;
+  position: absolute;
+  width: 150px;
+  padding-left: 0.5em;
+}
+
+.video-card .info h4 {
+  font-size: 16px;
+}
+
+.video-card .info p {
+  font-size: 12px;
+}
+
+.creator-name {
+  font-size: 13px;
 }
